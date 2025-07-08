@@ -5,6 +5,7 @@
 #include <vector>
 #include "Server.h"
 #include "Logger.h"
+#include <unordered_map>
 
 constexpr auto userData = "C:/Windows/Temp/Chat/userData.txt";	// файл для хранения данных пользователей
 constexpr auto user_count = "C:/Windows/Temp/Chat/user_count.txt";	// файл для хранения кол-ва зарегистрированных пользователей
@@ -29,10 +30,13 @@ private:
     Server server;
     Logger log;
     std::shared_mutex mutex;
+    std::vector<Message> _messages;
+    std::unordered_map<std::string, int> _usersMapByName;
     int count_users = 0; // кол-во зарегистрированных пользователей
 public:
     Chat(); // конструктор
     ~Chat(); // деструктор
+    std::string getLogin() const;
     void writeUsers() const; // метод для записи данных о пользователях в файл
     void writeMessage() const; // метод для записи данных о сообщениях в файл
     void readUsers(); // метод для чтения данных о пользователях из файла
@@ -41,17 +45,21 @@ public:
     void readPublicMessage(); // метод для чтения общих сообщений из файла
     int getReadUsersStatus(); // метод выводит 1, если есть файл userData, иначе -1
     void getChat(); // метод выводит данные пользователя
-    void enter(); // авторизация пользователя
-    void registration(); //  регистрация пользователя
-    void sendPrivateMessage(); // отправка личных сообщений
-    void sendPublicMessage(); // отправка публичных сообщений
+    std::vector<std::string> getUserList() const;
+    std::vector<std::string> getChatMessages(std::string usLog);
+    std::vector<std::string> getPrivateMessage(std::string userName);//показать личные сообщения пользователю username
+    int enter(std::string userLogin, std::string userPassword); // авторизация пользователя
+    int checkUser(std::string userLogin, std::string userPassword); // прроверка корректности логина и пароля
+    int registration(std::string userLogin, std::string userName, std::string userPassword); //  регистрация пользователя
+    int sendPrivateMessage(std::string userLogin, std::string userRecipient, std::string text); // отправка личных сообщений
+    void sendPublicMessage(std::string userLogin, std::string text); // отправка публичных сообщений
     bool getstatus(); // метод выводит статус авторизации (_status)
     void exit(); // разлогинить авторизованного пользователя
     void printMessage(std::string recipient); // вывод на экран новых сообщений
     void deletePrivateMessage(std::string recipient); // перемещение прочитанных личных сообщений в viewedMessage и их удаление из allMessage
     void deletePublicMessage(std::string recipient); // удаление прочитанных общих сообщений из allPublicMessage
     void printAllMessage(); // вывод на экран всех просмотренных личных сообщений
-    void start(); // начало работы программы
+    // void start(); // начало работы программы
 };
 
 #endif // CHAT_H

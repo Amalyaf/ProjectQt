@@ -8,6 +8,7 @@
 #include <thread>
 #include <shared_mutex>
 #include <chrono>
+#include "parsing.h"
 
 std::string status_connect = "No";
 using namespace std::chrono_literals;
@@ -17,198 +18,275 @@ Chat::Chat()
     //// если есть файл с данными ранее зарегистрированных пользователей, то вызвать методы для считывания данных из файлов
     if (getReadUsersStatus() == 1) {
         readUsers();
-        //	readPrivateMessage();
-        //	readPublicMessage();
+        readPrivateMessage();
+        readPublicMessage();
     }
-    if (server.init() == 0) {
-        //std::this_thread::sleep_for(100ms);
-        std::thread t1(&Logger::WriteLog, std::ref(log), "Server successfully connected!");
-        std::thread t2(&Logger::ReadLog, std::ref(log));
-        t1.join();
-        t2.join();
-        status_connect = "Yes";
-    }
-    else {
-        std::thread t1(&Logger::WriteLog, std::ref(log), "Server not connected!");
-        t1.join();
-        status_connect = "No";
-    }
+    std::thread t1(&Logger::WriteLog, std::ref(log), "Chat opened successfully!");
+    std::thread t2(&Logger::ReadLog, std::ref(log));
+    t1.join();
+    t2.join();
+    // if (server.init() == 0) {
+    //     //std::this_thread::sleep_for(100ms);
+    //     std::thread t1(&Logger::WriteLog, std::ref(log), "Server successfully connected!");
+    //     std::thread t2(&Logger::ReadLog, std::ref(log));
+    //     t1.join();
+    //     t2.join();
+    //     status_connect = "Yes";
+    // }
+    // else {
+    //     std::thread t1(&Logger::WriteLog, std::ref(log), "Server not connected!");
+    //     t1.join();
+    //     status_connect = "No";
+    // }
 }
 
 Chat::~Chat() {
+    deletePrivateMessage(_login);
+    deletePublicMessage(_login);
     writeUsers(); // метод для записи данных зарегистрированных пользователей в файл
-    //writeMessage(); // метод для записи личных и публичных сообщений в отдельные файлы
-
+    writeMessage(); // метод для записи личных и публичных сообщений в отдельные файлы
     std::thread t1(&Logger::WriteLog, std::ref(log), "Закрытие чата!\n");
     std::thread t2(&Logger::ReadLog, std::ref(log));
     t1.join();
     t2.join();
-    if (status_connect == "Yes") {
-        server.Write("Exit");
-    }
+    // if (status_connect == "Yes") {
+    //     server.Write("Exit");
+    // }
+    // server.exit();
+}
 
-    server.exit();
+string Chat::getLogin() const
+{
+    return _login;
 }
 
 
-void Chat::getChat()
+
+// void Chat::getChat()
+// {
+//     for (std::vector<Users>::iterator it = allUsers.begin(); it < allUsers.end(); it++)
+//     {
+//         server.Write("\nЛогин пользователя: ");
+//         server.Write(it->getLogin());
+//         server.Write("\nПароль: ");
+//         server.Write(it->getPassword());
+//         server.Write("\nИмя: ");
+//         server.Write(it->getName());
+//         server.Write("\n");
+//     }
+// }
+
+std::vector<std::string> Chat::getPrivateMessage(std::string userName)
 {
-    for (std::vector<Users>::iterator it = allUsers.begin(); it < allUsers.end(); it++)
+    vector<string> strings;
+    for (auto &m : allMessage)
     {
-        server.Write("\nЛогин пользователя: ");
-        server.Write(it->getLogin());
-        server.Write("\nПароль: ");
-        server.Write(it->getPassword());
-        server.Write("\nИмя: ");
-        server.Write(it->getName());
-        server.Write("\n");
-    }
-}
-
-void Chat::enter()
-{
-    std::string c = "y";
-    while (c != "n")
-    {
-        try
-        {
-            server.Write("\nДля входа введите логин: ");
-            _login = server.Read();
-            Users user;
-            user._login = _login;
-
-            std::thread t1(&Logger::WriteLog, std::ref(log), "Попытка входа под учётной записью " + _login);
-            t1.join();
-
-            // При чтении из файла
-            std::vector<Users>::iterator result = find(allUsers.begin(), allUsers.end(), user);
-            if (result == allUsers.end())
-            {
-                throw BadLogin();
+        if(userName == m.getRecipient()){
+            if (userName == m.getSender()){
+                strings.push_back("<Self message>: " + m.getText());
             }
-
-            else
-            {
-                user = *result;
-                server.Write("Введите пароль: ");
-                _password = server.Read();
-
-                // При чтении из файла
-                if (user._password != _password)
-                {
-                    log.WriteLog("Введён неправильный пароль для учётной записи пользователя " + _login);
-                    throw BadPassword();
-                }
-                else
-                {
-                    _status = true;
-                    c = "n";
-                    std::thread t1(&Logger::WriteLog, std::ref(log), "Выполнен вход под учётной записью пользователя " + _login);
-                    t1.join();
-                    printMessage(_login);
-                }
+            else {
+                strings.push_back("<" + m.getSender() + "> say to you: " + m.getText());
             }
         }
-        catch (BadLogin& e)
-        {
-            server.Write(e.what());
-            c = server.Read();
-        }
-        catch (BadPassword& e)
-        {
-            server.Write(e.what());
-            c = server.Read();
+        else if (userName != m.getRecipient() && userName == m.getSender()){
+            strings.push_back("Message to <" + m.getRecipient() + ">: " + m.getText());
         }
     }
+    return strings;
 }
 
-void Chat::registration()
+
+std::vector<string> Chat::getChatMessages(std::string usLog)
 {
-    std::string c = "y";
-    while (c != "n")
+    vector<string> strings;
+    for (auto &m: allPublicMessage)
     {
+        if (usLog == m.getRecipient()){
+            if (usLog == m.getSender()){
+                strings.push_back("<You sent>: " + m.getText());
+            }
+            else {
+                strings.push_back("<" + m.getSender() + ">: " + m.getText());
+            }
+        }
+    }
+    return strings;
+}
+
+std::vector<string> Chat::getUserList() const
+{
+    vector<string> userList;
+    for(auto user : allUsers)
+    {
+        userList.push_back(user.getLogin());
+    }
+    return userList;
+}
+
+int Chat::enter(std::string userLogin, std::string userPassword)
+{
+    try
+    {
+        _login = userLogin;
         Users user;
-        server.Write("\nДобро пожаловать в чат!\nРегистрация нового пользователя!\nВведите логин: ");
-        std::string login = server.Read();
-        user.setLogin(login);
-        server.Write("Введите пароль: ");
-        user.setPassword(server.Read());
-        server.Write("Введите имя: ");
-        user.setName(server.Read());
-        std::vector<Users>::iterator result = find(allUsers.begin(), allUsers.end(), user);
+        user._login = _login;
 
-        std::thread t1(&Logger::WriteLog, std::ref(log), "Регистрация нового пользователя");
+        std::thread t1(&Logger::WriteLog, std::ref(log), "Попытка входа под учётной записью " + _login);
         t1.join();
 
         // При чтении из файла
-        if (result != allUsers.end())
-        {
-            server.Write("\nПользователь с таким логином уже существует!\nХотите повторить попытку?(y/n): ");
-            c = server.Read();
-        }
-        else
-        {
-            std::cout << "Добавление нового пользователя в БД" << std::endl;
-            count_users++;
-            c = "n";
-            allUsers.push_back(user);
-            std::thread t1(&Logger::WriteLog, std::ref(log), "Пользователь с логином " + login + " успешно зарегистрирован");
-            t1.join();
-        }
-    }
-}
-
-void Chat::sendPrivateMessage()
-{
-    std::string c = "y";
-    _sender = _login;
-
-    while (c != "n")
-    {
-        server.Write("Кому: ");
-        _recipient = server.Read();
-        Users user;
-        user._login = _recipient;
         std::vector<Users>::iterator result = find(allUsers.begin(), allUsers.end(), user);
         if (result == allUsers.end())
         {
-            server.Write("\nПолучатель не найден!\nХотите повторить попытку?(y/n): ");
-            c = server.Read();
+            throw BadLogin();
         }
 
         else
         {
-            Message message;
-            message._recipient = _recipient;
-            message._sender = _sender;
-            server.Write("\nВведите сообщение:\n");
-            message.setMessage(server.Read());
-            allMessage.push_back(message);
-            c = "n";
-            std::thread t1(&Logger::WriteLog, std::ref(log), "Пользователь " + _sender + " успешно отправил сообщение пользователю " + _recipient);
-            t1.join();
+            user = *result;
+            _password = userPassword;
+
+            // При чтении из файла
+            if (user._password != _password)
+            {
+                throw BadPassword();
+            }
+            else
+            {
+                _status = true;
+                std::thread t1(&Logger::WriteLog, std::ref(log), "Выполнен вход под учётной записью пользователя " + _login);
+                t1.join();
+                return 0;
+            }
         }
+    }
+    catch (BadLogin& e)
+    {
+        log.WriteLog("Пользователь с логином " + _login + " не существует");
+        return -1;
+        //c = server.Read();
+    }
+    catch (BadPassword& e)
+    {
+        log.WriteLog("Введён неправильный пароль для учётной записи пользователя " + _login);
+        return -2;
+        //c = server.Read();
     }
 }
 
-void Chat::sendPublicMessage()
+int Chat::checkUser(std::string userLogin, std::string userPassword)
+{
+    _login = userLogin;
+    Users user;
+    user._login = _login;
+
+    std::thread t1(&Logger::WriteLog, std::ref(log), "Попытка входа под учётной записью " + _login);
+    t1.join();
+
+    // При чтении из файла
+    std::vector<Users>::iterator result = find(allUsers.begin(), allUsers.end(), user);
+    if (result == allUsers.end())
+    {
+        return -1;
+    }
+
+    else
+    {
+        user = *result;
+        _password = userPassword;
+
+        // При чтении из файла
+        if (user._password != _password)
+        {
+            log.WriteLog("Введён неправильный пароль для учётной записи пользователя " + _login);
+            return -2;
+        }
+        else
+        {
+            _status = true;
+            std::thread t1(&Logger::WriteLog, std::ref(log), "Выполнен вход под учётной записью пользователя " + _login);
+            t1.join();
+            return 0;
+        }
+    }
+
+    return 0;
+}
+
+int Chat::registration(std::string userLogin, std::string userName, std::string userPassword)
+{
+    Users user;
+    std::string login = userLogin;
+    user.setLogin(login);
+    user.setPassword(userPassword);
+    user.setName(userName);
+    std::vector<Users>::iterator result = find(allUsers.begin(), allUsers.end(), user);
+
+    std::thread t1(&Logger::WriteLog, std::ref(log), "Регистрация нового пользователя");
+    t1.join();
+
+    if (!correctName(userLogin)) {
+        return -1;
+    }
+
+    // При чтении из файла
+    if (result != allUsers.end())
+    {
+        std::thread t1(&Logger::WriteLog, std::ref(log), "Пользователь с логином " + login + " уже существует!");
+        t1.join();
+        return -2;
+
+    }
+    else
+    {
+        count_users++;
+        allUsers.push_back(user);
+        std::thread t1(&Logger::WriteLog, std::ref(log), "Пользователь с логином " + login + " успешно зарегистрирован");
+        t1.join();
+        return 0;
+    }
+}
+
+int Chat::sendPrivateMessage(std::string userLogin, std::string userRecipient, std::string text)
+{
+    _sender = userLogin;
+    _recipient = userRecipient;
+    Users user;
+    user._login = _recipient;
+    std::vector<Users>::iterator result = find(allUsers.begin(), allUsers.end(), user);
+    if (result == allUsers.end())
+    {
+        return -1;
+    }
+
+    else
+    {
+        Message message;
+        message._recipient = _recipient;
+        message._sender = _sender;
+        message.setMessage(text);
+        allMessage.push_back(message);
+        std::thread t1(&Logger::WriteLog, std::ref(log), "Пользователь " + _sender + " успешно отправил сообщение пользователю " + _recipient);
+        t1.join();
+        return 1;
+    }
+}
+
+void Chat::sendPublicMessage(std::string userLogin, std::string text)
 {
     Message message;
-    message._sender = _login;
-    server.Write("\nВведите групповое сообщение:\n");
-    message.setMessage(server.Read());
+    message._sender = userLogin;
+    message.setMessage(text);
 
     for (std::vector<Users>::iterator it = allUsers.begin(); it < allUsers.end(); it++)
     {
-        if (it->_login != _login)
-        {
             message._recipient = it->_login;
             allPublicMessage.push_back(message);
-        }
     }
-    //message._recipient = "all";
+
     viewedMessage.push_back(message);
-    std::thread t1(&Logger::WriteLog, std::ref(log), "Пользователь " + _login + " успешно отправил групповое сообщение");
+    std::thread t1(&Logger::WriteLog, std::ref(log), "Пользователь " + userLogin + " успешно отправил групповое сообщение");
     t1.join();
 }
 
@@ -220,24 +298,11 @@ void Chat::printMessage(std::string recipient)
         if (it->_recipient == recipient)
         {
             count++;
-            if (count == 1)
-            {
-                server.Write("\n------------------------------------------------------\nУ вас есть новые личные сообщения: ");
-                //server.Write("У вас есть новые личные сообщения: ");
-            }
-            server.Write("\nОтправитель: ");
-            server.Write(it->_sender);
-            server.Write("\nПолучатель: ");
-            server.Write(it->_recipient);
-            server.Write("\nСообщение: ");
-            server.Write(it->_message);
-            server.Write("\n");
         }
 
     }
     if (count != 0)
     {
-        server.Write("\n------------------------------------------------------\n");
         deletePrivateMessage(recipient);
     }
     count = 0;
@@ -246,22 +311,11 @@ void Chat::printMessage(std::string recipient)
         if (it->_recipient == recipient)
         {
             count++;
-            if (count == 1)
-            {
-                server.Write("\n------------------------------------------------------\nУ вас есть новые общие сообщения: ");
-                //server.Write("У вас есть новые общие сообщения: ");
-            }
-            server.Write("\nОтправитель: ");
-            server.Write(it->_sender);
-            server.Write("\nСообщение: ");
-            server.Write(it->_message);
-            server.Write("\n");
         }
 
     }
     if (count != 0)
     {
-        server.Write("\n------------------------------------------------------\n");
         deletePublicMessage(recipient);
     }
 }
@@ -555,72 +609,72 @@ void Chat::readPublicMessage() {
 }
 
 
-void Chat::start() {
-    std::string c = "y"; // условие выхода из цикла
-    if (getReadUsersStatus() == 1) { // если есть файл с данными о ранее зарегистрированных пользователях,
-        // то сначала спрашиваем о регистрации нового пользователя и в зависимости от ответа выполняем регистрацию
-        server.Write("\n\nДобро пожаловать в чат!\nВ БД уже есть зарегистрированные пользователи.\nХотите зарегистрировать ещё одного пользователя?(y/n)\n");
-        c = server.Read();
-    }
-    while (c == "y") {
-        registration();
-        server.Write("\n\nХотите зарегистрировать ещё одного пользователя?(y/n)\n");
-        c = server.Read();
-    }
+// void Chat::start() {
+//     std::string c = "y"; // условие выхода из цикла
+//     if (getReadUsersStatus() == 1) { // если есть файл с данными о ранее зарегистрированных пользователях,
+//         // то сначала спрашиваем о регистрации нового пользователя и в зависимости от ответа выполняем регистрацию
+//         server.Write("\n\nДобро пожаловать в чат!\nВ БД уже есть зарегистрированные пользователи.\nХотите зарегистрировать ещё одного пользователя?(y/n)\n");
+//         c = server.Read();
+//     }
+//     while (c == "y") {
+//         registration();
+//         server.Write("\n\nХотите зарегистрировать ещё одного пользователя?(y/n)\n");
+//         c = server.Read();
+//     }
 
-    enter(); // авторизация
-    c = "y";
-    while (c != "n") {
-        if (getstatus()) { // проверяем был ли выполнен вход
-            char message;
-            std::string m;
-            server.Write("\nХотите отправить сообщение?(y/n)\n");
-            c = server.Read();
+//     enter(); // авторизация
+//     c = "y";
+//     while (c != "n") {
+//         if (getstatus()) { // проверяем был ли выполнен вход
+//             char message;
+//             std::string m;
+//             server.Write("\nХотите отправить сообщение?(y/n)\n");
+//             c = server.Read();
 
-            if (c == "y")
-            {
-                server.Write("\nВыберите тип отправляемого сообщения: 1-private, 2-public:\n");
-                m = server.Read();
+//             if (c == "y")
+//             {
+//                 server.Write("\nВыберите тип отправляемого сообщения: 1-private, 2-public:\n");
+//                 m = server.Read();
 
-                if (m == "1") {
-                    message = '1';
-                }
+//                 if (m == "1") {
+//                     message = '1';
+//                 }
 
-                else if (m == "2") {
-                    message = '2';
-                }
+//                 else if (m == "2") {
+//                     message = '2';
+//                 }
 
-                else {
-                    message = '3';
-                }
+//                 else {
+//                     message = '3';
+//                 }
 
-                switch (message) {
-                case '1':
-                    sendPrivateMessage();
-                    break;
-                case '2':
-                    sendPublicMessage();
-                    break;
-                default:
-                    server.Write("\nНекорректный ввод!\n");
-                    break;
-                }
-            }
-            if (c == "n") {
-                server.Write("\nХотите выполнить вход под другой учетной записью?(y/n)\n");
-                c = server.Read();
-                if (c == "y") {
-                    exit();
-                    enter();
-                }
-                else {
-                    break;
-                }
-            }
-        }
-        else {
-            c = "n";
-            server.Write("\nВход не выполнен!\n");
-        }
-    }
-}
+//                 switch (message) {
+//                 case '1':
+//                     sendPrivateMessage();
+//                     break;
+//                 case '2':
+//                     sendPublicMessage();
+//                     break;
+//                 default:
+//                     server.Write("\nНекорректный ввод!\n");
+//                     break;
+//                 }
+//             }
+//             if (c == "n") {
+//                 server.Write("\nХотите выполнить вход под другой учетной записью?(y/n)\n");
+//                 c = server.Read();
+//                 if (c == "y") {
+//                     exit();
+//                     enter();
+//                 }
+//                 else {
+//                     break;
+//                 }
+//             }
+//         }
+//         else {
+//             c = "n";
+//             server.Write("\nВход не выполнен!\n");
+//         }
+//     }
+// }

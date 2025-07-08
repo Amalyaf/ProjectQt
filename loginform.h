@@ -2,6 +2,8 @@
 #define LOGINFORM_H
 
 #include <QWidget>
+#include <memory>
+#include "chat.h"
 
 namespace Ui {
 class LoginForm;
@@ -14,9 +16,12 @@ class LoginForm : public QWidget
 public:
     explicit LoginForm(QWidget *parent = nullptr);
     ~LoginForm();
+    void setUsers(std::shared_ptr<Chat> dbPtr);
 
 signals:
     void registerRequested();
+    void accepted(int userId, QString name);
+    void rejected();
 private slots:
     void on_buttonBox_accepted();
     void on_registrationPushButton_clicked();
@@ -24,6 +29,7 @@ private slots:
 
 private:
     Ui::LoginForm *ui;
+    std::shared_ptr<Chat> m_dbPtr;
 };
 
 #endif // LOGINFORM_H

@@ -78,6 +78,7 @@ qt_add_executable(untitled2
     bad_login.cpp bad_login.h
     bad_password.cpp bad_password.h
     registrationform.h registrationform.cpp registrationform.ui
+    parsing.h parsing.cpp
 )
 
 target_link_libraries(untitled2

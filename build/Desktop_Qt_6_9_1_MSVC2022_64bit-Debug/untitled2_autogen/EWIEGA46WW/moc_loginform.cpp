@@ -41,6 +41,10 @@ template <> constexpr inline auto LoginForm::qt_create_metaobjectdata<qt_meta_ta
         "LoginForm",
         "registerRequested",
         "",
+        "accepted",
+        "userId",
+        "name",
+        "rejected",
         "on_buttonBox_accepted",
         "on_registrationPushButton_clicked",
         "on_buttonBox_rejected"
@@ -49,12 +53,18 @@ template <> constexpr inline auto LoginForm::qt_create_metaobjectdata<qt_meta_ta
     QtMocHelpers::UintData qt_methods {
         // Signal 'registerRequested'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'accepted'
+        QtMocHelpers::SignalData<void(int, QString)>(3, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 4 }, { QMetaType::QString, 5 },
+        }}),
+        // Signal 'rejected'
+        QtMocHelpers::SignalData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'on_buttonBox_accepted'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_registrationPushButton_clicked'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_buttonBox_rejected'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -79,14 +89,20 @@ void LoginForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->registerRequested(); break;
-        case 1: _t->on_buttonBox_accepted(); break;
-        case 2: _t->on_registrationPushButton_clicked(); break;
-        case 3: _t->on_buttonBox_rejected(); break;
+        case 1: _t->accepted((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 2: _t->rejected(); break;
+        case 3: _t->on_buttonBox_accepted(); break;
+        case 4: _t->on_registrationPushButton_clicked(); break;
+        case 5: _t->on_buttonBox_rejected(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (LoginForm::*)()>(_a, &LoginForm::registerRequested, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (LoginForm::*)(int , QString )>(_a, &LoginForm::accepted, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (LoginForm::*)()>(_a, &LoginForm::rejected, 2))
             return;
     }
 }
@@ -110,14 +126,14 @@ int LoginForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 6;
     }
     return _id;
 }
@@ -126,5 +142,17 @@ int LoginForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void LoginForm::registerRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void LoginForm::accepted(int _t1, QString _t2)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1, _t2);
+}
+
+// SIGNAL 2
+void LoginForm::rejected()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 QT_WARNING_POP

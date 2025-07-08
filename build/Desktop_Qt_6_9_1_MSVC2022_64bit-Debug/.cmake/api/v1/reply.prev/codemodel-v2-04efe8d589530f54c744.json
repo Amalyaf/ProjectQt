@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-cda839162dda66ec10e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "untitled2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "untitled2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-untitled2-Debug-56684072a078f72c3707.json",
+					"name" : "untitled2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "untitled2_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-untitled2_autogen-Debug-9a18c6f59393db7cd542.json",
+					"name" : "untitled2_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "untitled2_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-untitled2_autogen_timestamp_deps-Debug-e501b755c03d48cdf212.json",
+					"name" : "untitled2_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug",
+		"source" : "C:/Users/Amalya/Documents/untitled2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
