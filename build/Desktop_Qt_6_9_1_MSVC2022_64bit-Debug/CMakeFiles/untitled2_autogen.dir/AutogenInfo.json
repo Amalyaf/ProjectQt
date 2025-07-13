@@ -357,6 +357,91 @@
 		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargets-debug.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersion.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersionImpl.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateDependencies.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateAdditionalTargetInfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateVersionlessAliasTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets-debug.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets-debug.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-debug.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-debug.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtInstallPaths.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/Qt6Targets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/Qt6VersionlessAliasTargets.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtFeature.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.9.1/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
 	],
@@ -367,75 +452,45 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/Amalya/Documents/untitled2/Message.h",
+			"C:/Users/Amalya/Documents/untitled2/client/client.h",
 			"MU",
-			"EWIEGA46WW/moc_Message.cpp",
+			"7EM65HM6UG/moc_client.cpp",
 			null
 		],
 		[
-			"C:/Users/Amalya/Documents/untitled2/bad_login.h",
+			"C:/Users/Amalya/Documents/untitled2/client/form.h",
 			"MU",
-			"EWIEGA46WW/moc_bad_login.cpp",
+			"7EM65HM6UG/moc_form.cpp",
 			null
 		],
 		[
-			"C:/Users/Amalya/Documents/untitled2/bad_password.h",
+			"C:/Users/Amalya/Documents/untitled2/client/loginform.h",
 			"MU",
-			"EWIEGA46WW/moc_bad_password.cpp",
+			"7EM65HM6UG/moc_loginform.cpp",
 			null
 		],
 		[
-			"C:/Users/Amalya/Documents/untitled2/chat.h",
+			"C:/Users/Amalya/Documents/untitled2/client/mainwindow.h",
 			"MU",
-			"EWIEGA46WW/moc_chat.cpp",
+			"7EM65HM6UG/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"C:/Users/Amalya/Documents/untitled2/logger.h",
+			"C:/Users/Amalya/Documents/untitled2/client/parsing.h",
 			"MU",
-			"EWIEGA46WW/moc_logger.cpp",
+			"7EM65HM6UG/moc_parsing.cpp",
 			null
 		],
 		[
-			"C:/Users/Amalya/Documents/untitled2/loginform.h",
+			"C:/Users/Amalya/Documents/untitled2/client/registrationform.h",
 			"MU",
-			"EWIEGA46WW/moc_loginform.cpp",
+			"7EM65HM6UG/moc_registrationform.cpp",
 			null
 		],
 		[
-			"C:/Users/Amalya/Documents/untitled2/mainwindow.h",
+			"C:/Users/Amalya/Documents/untitled2/client/startscreen.h",
 			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"C:/Users/Amalya/Documents/untitled2/parsing.h",
-			"MU",
-			"EWIEGA46WW/moc_parsing.cpp",
-			null
-		],
-		[
-			"C:/Users/Amalya/Documents/untitled2/registrationform.h",
-			"MU",
-			"EWIEGA46WW/moc_registrationform.cpp",
-			null
-		],
-		[
-			"C:/Users/Amalya/Documents/untitled2/server.h",
-			"MU",
-			"EWIEGA46WW/moc_server.cpp",
-			null
-		],
-		[
-			"C:/Users/Amalya/Documents/untitled2/startscreen.h",
-			"MU",
-			"EWIEGA46WW/moc_startscreen.cpp",
-			null
-		],
-		[
-			"C:/Users/Amalya/Documents/untitled2/users.h",
-			"MU",
-			"EWIEGA46WW/moc_users.cpp",
+			"7EM65HM6UG/moc_startscreen.cpp",
 			null
 		]
 	],
@@ -446,6 +501,7 @@
 	[
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -469,7 +525,8 @@
 		"C:/Qt/6.9.1/msvc2022_64/include",
 		"C:/Qt/6.9.1/msvc2022_64/mkspecs/win32-msvc",
 		"C:/Qt/6.9.1/msvc2022_64/include/QtWidgets",
-		"C:/Qt/6.9.1/msvc2022_64/include/QtGui"
+		"C:/Qt/6.9.1/msvc2022_64/include/QtGui",
+		"C:/Qt/6.9.1/msvc2022_64/include/QtNetwork"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -496,22 +553,30 @@
 	"SETTINGS_FILE" : "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/untitled2_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/Users/Amalya/Documents/untitled2/bad_login.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/bad_password.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/chat.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/logger.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/loginform.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/main.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/mainwindow.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/parsing.cpp", "MU", null ],
+		[ "C:/Users/Amalya/Documents/untitled2/client/client.cpp", "MU", null ],
+		[ "C:/Users/Amalya/Documents/untitled2/client/form.cpp", "MU", null ],
 		[
-			"C:/Users/Amalya/Documents/untitled2/registrationform.cpp",
+			"C:/Users/Amalya/Documents/untitled2/client/loginform.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/Amalya/Documents/untitled2/server.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/startscreen.cpp", "MU", null ],
-		[ "C:/Users/Amalya/Documents/untitled2/users.cpp", "MU", null ]
+		[ "C:/Users/Amalya/Documents/untitled2/client/main.cpp", "MU", null ],
+		[
+			"C:/Users/Amalya/Documents/untitled2/client/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/Amalya/Documents/untitled2/client/parsing.cpp", "MU", null ],
+		[
+			"C:/Users/Amalya/Documents/untitled2/client/registrationform.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Amalya/Documents/untitled2/client/startscreen.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

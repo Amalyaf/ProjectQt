@@ -156,8 +156,7 @@ C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/
   C:/Qt/6.9.1/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.9.1/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.9.1/msvc2022_64/include/QtWidgets/qwidget.h \
-  C:/Users/Amalya/Documents/untitled2/Logger.h \
   C:/Users/Amalya/Documents/untitled2/Message.h \
-  C:/Users/Amalya/Documents/untitled2/Server.h \
   C:/Users/Amalya/Documents/untitled2/Users.h \
-  C:/Users/Amalya/Documents/untitled2/chat.h
+  C:/Users/Amalya/Documents/untitled2/chat.h \
+  C:/Users/Amalya/Documents/untitled2/logger.h

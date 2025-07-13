@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 project(untitled2 LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #опция CMAKE_INCLUDE_CURRENT_DIR обязательно должна быть включена,
@@ -26,16 +26,17 @@ set(CHAT_LIBRARIES)
 #здесь мы создаем и заполняем список подключаемых модулей Qt
 #если нужно добавить модули, добавьте их в этот список по образцу:
 #set(Qt5Modules [модуль 1] [модуль 2] ... [модуль n])
-set(Qt5Modules Core Widgets)
+set(Qt6Modules Core Widgets)
 
 #здесь мы формируем из списка модулей список библиотек,
 #которые требуется подключить, и складываем их в CHAT_LIBRARIES
-foreach(QtModule IN LISTS Qt5Modules)
- list(APPEND CHAT_LIBRARIES Qt5::${QtModule})
+foreach(QtModule IN LISTS Qt6Modules)
+ list(APPEND CHAT_LIBRARIES Qt6::${QtModule})
 endforeach(QtModule)
 
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Network)
 
 #здесь мы формируем список всех исходников, ассоциированных с
 #проектом Chat.
@@ -64,27 +65,33 @@ qt_standard_project_setup()
 
 qt_add_executable(untitled2
     WIN32 MACOSX_BUNDLE
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
-    chat.cpp chat.h
-    users.cpp users.h
-    server.cpp server.h
-    Message.h
-    loginform.cpp loginform.h loginform.ui
-    startscreen.cpp startscreen.h startscreen.ui
-    logger.cpp logger.h
-    bad_login.cpp bad_login.h
-    bad_password.cpp bad_password.h
-    registrationform.h registrationform.cpp registrationform.ui
-    parsing.h parsing.cpp
+    client/client.cpp
+    client/client.h
+    client/form.cpp
+    client/form.h
+    client/form.ui
+    client/main.cpp
+    client/mainwindow.cpp
+    client/mainwindow.h
+    client/mainwindow.ui
+    client/loginform.cpp
+    client/loginform.h
+    client/loginform.ui
+    client/parsing.cpp
+    client/parsing.h
+    client/registrationform.cpp
+    client/registrationform.h
+    client/registrationform.ui
+    client/startscreen.cpp
+    client/startscreen.h
+    client/startscreen.ui
 )
 
 target_link_libraries(untitled2
     PRIVATE
         Qt::Core
         Qt::Widgets
+        Qt6::Network
 )
 
 include(GNUInstallDirs)

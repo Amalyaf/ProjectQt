@@ -63,8 +63,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-oz3y2c"
-      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-oz3y2c"
+      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-xb7tmx"
+      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-xb7tmx"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -74,11 +74,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-oz3y2c'
+        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-xb7tmx'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_6e670
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6e670.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_6e670.dir\\ /FS -c C:\\Qt\\Tools\\CMake_64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_6e670.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6e670.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_6e670.exe /implib:cmTC_6e670.lib /pdb:cmTC_6e670.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_a1e90
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a1e90.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_a1e90.dir\\ /FS -c C:\\Qt\\Tools\\CMake_64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a1e90.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a1e90.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_a1e90.exe /implib:cmTC_a1e90.lib /pdb:cmTC_a1e90.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -128,8 +128,8 @@ events:
       - "build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
       - "CMakeLists.txt:38 (find_package)"
     directories:
-      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-l0xac0"
-      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-l0xac0"
+      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ci8aok"
+      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ci8aok"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -139,13 +139,13 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-l0xac0'
+        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ci8aok'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_f28ae
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_f28ae.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_f28ae.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-l0xac0\\src.cxx
-        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_f28ae.dir/src.cxx.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_f28ae.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_f28ae.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-l0xac0\\src.cxx
-        C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-l0xac0\\src.cxx(1): fatal error C1083: Не удается открыть файл включение: pthread.h: No such file or directory,
+        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_b911a
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4  /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /showIncludes /FoCMakeFiles\\cmTC_b911a.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_b911a.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ci8aok\\src.cxx
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_b911a.dir/src.cxx.obj 
+        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4  /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /showIncludes /FoCMakeFiles\\cmTC_b911a.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_b911a.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ci8aok\\src.cxx
+        C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ci8aok\\src.cxx(1): fatal error C1083: Не удается открыть файл включение: pthread.h: No such file or directory,
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -167,8 +167,8 @@ events:
       - "build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
       - "CMakeLists.txt:38 (find_package)"
     directories:
-      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-cdzsyg"
-      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-cdzsyg"
+      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-0uhlx9"
+      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-0uhlx9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -178,14 +178,14 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-cdzsyg'
+        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-0uhlx9'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_d1f25
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4 -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_d1f25.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_d1f25.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-cdzsyg\\CheckFunctionExists.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_d1f25.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d1f25.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_d1f25.exe /implib:cmTC_d1f25.lib /pdb:cmTC_d1f25.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        \x1b[31mFAILED: \x1b[0mcmTC_d1f25.exe 
-        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_d1f25.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d1f25.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_d1f25.exe /implib:cmTC_d1f25.lib /pdb:cmTC_d1f25.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d1f25.dir\\CheckFunctionExists.cxx.obj /out:cmTC_d1f25.exe /implib:cmTC_d1f25.lib /pdb:cmTC_d1f25.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_d1f25.dir/intermediate.manifest CMakeFiles\\cmTC_d1f25.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_a3b44
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4 -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /showIncludes /FoCMakeFiles\\cmTC_a3b44.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_a3b44.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0uhlx9\\CheckFunctionExists.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a3b44.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a3b44.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_a3b44.exe /implib:cmTC_a3b44.lib /pdb:cmTC_a3b44.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_a3b44.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a3b44.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a3b44.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_a3b44.exe /implib:cmTC_a3b44.lib /pdb:cmTC_a3b44.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a3b44.dir\\CheckFunctionExists.cxx.obj /out:cmTC_a3b44.exe /implib:cmTC_a3b44.lib /pdb:cmTC_a3b44.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a3b44.dir/intermediate.manifest CMakeFiles\\cmTC_a3b44.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib"\x0d
         ninja: build stopped: subcommand failed.
         
@@ -208,8 +208,8 @@ events:
       - "build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
       - "CMakeLists.txt:38 (find_package)"
     directories:
-      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-i8g9ob"
-      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-i8g9ob"
+      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-tp600o"
+      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-tp600o"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -219,14 +219,14 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-i8g9ob'
+        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-tp600o'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_8596f
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4 -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_8596f.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_8596f.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-i8g9ob\\CheckFunctionExists.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_8596f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8596f.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_8596f.exe /implib:cmTC_8596f.lib /pdb:cmTC_8596f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        \x1b[31mFAILED: \x1b[0mcmTC_8596f.exe 
-        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_8596f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8596f.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_8596f.exe /implib:cmTC_8596f.lib /pdb:cmTC_8596f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8596f.dir\\CheckFunctionExists.cxx.obj /out:cmTC_8596f.exe /implib:cmTC_8596f.lib /pdb:cmTC_8596f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_8596f.dir/intermediate.manifest CMakeFiles\\cmTC_8596f.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_db78a
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4 -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /showIncludes /FoCMakeFiles\\cmTC_db78a.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_db78a.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-tp600o\\CheckFunctionExists.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_db78a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_db78a.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_db78a.exe /implib:cmTC_db78a.lib /pdb:cmTC_db78a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_db78a.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_db78a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_db78a.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_db78a.exe /implib:cmTC_db78a.lib /pdb:cmTC_db78a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_db78a.dir\\CheckFunctionExists.cxx.obj /out:cmTC_db78a.exe /implib:cmTC_db78a.lib /pdb:cmTC_db78a.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_db78a.dir/intermediate.manifest CMakeFiles\\cmTC_db78a.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: не удается открыть файл "pthread.lib"\x0d
         ninja: build stopped: subcommand failed.
         
@@ -247,8 +247,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-84lmbm"
-      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-84lmbm"
+      source: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-33wn5a"
+      binary: "C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-33wn5a"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -258,11 +258,11 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-84lmbm'
+        Change Dir: 'C:/Users/Amalya/Documents/untitled2/build/Desktop_Qt_6_9_1_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-33wn5a'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_e80f9
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_e80f9.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_e80f9.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-84lmbm\\src.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e80f9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e80f9.dir\\src.cxx.obj  /out:cmTC_e80f9.exe /implib:cmTC_e80f9.lib /pdb:cmTC_e80f9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:/PROGRA~1/MICROS~3/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_7f5d5
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4  /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /showIncludes /FoCMakeFiles\\cmTC_7f5d5.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_7f5d5.dir\\ /FS -c C:\\Users\\Amalya\\Documents\\untitled2\\build\\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-33wn5a\\src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_7f5d5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7f5d5.dir\\src.cxx.obj  /out:cmTC_7f5d5.exe /implib:cmTC_7f5d5.lib /pdb:cmTC_7f5d5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...
