@@ -36,6 +36,7 @@ endforeach(QtModule)
 
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
+ find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Network)
 
 #здесь мы формируем список всех исходников, ассоциированных с
@@ -81,12 +82,13 @@ qt_add_executable(server
     main.cpp
     parsing.h
     parsing.cpp
+    mainwindow.h mainwindow.cpp mainwindow.ui
 )
 
 target_link_libraries(server
     PRIVATE
-        Qt::Core
-        Qt::Widgets
+        Qt6::Core
+        Qt6::Widgets
         Qt6::Network
 )
 

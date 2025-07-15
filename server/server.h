@@ -35,8 +35,8 @@ private:
     int iResult;
     int answerChat;
     std::string msg;
-    bool check = true;
-    Chat* chat = new Chat();
+    bool check = false;
+
 public:
     Server();
     ~Server();
@@ -44,6 +44,9 @@ public:
     void Write(std::string text); // отправка данных клиенту
     std::string Read(); // чтение данных от клиента
     void exit(); // закрытие сокета
+    void start();
+    int chek();
+    Chat* chat = new Chat();
 };
 
 #endif // SERVER_H

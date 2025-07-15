@@ -130,6 +130,15 @@ build CMakeFiles\server.dir\parsing.cpp.obj: CXX_COMPILER__server_unscanned_Debu
   TARGET_COMPILE_PDB = CMakeFiles\server.dir\
   TARGET_PDB = server.pdb
 
+build CMakeFiles\server.dir\mainwindow.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:\Users\Amalya\Documents\server\mainwindow.cpp || cmake_object_order_depends_target_server
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4 /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd -Zc:__cplusplus -permissive- -utf-8
+  INCLUDES = -IC:\Users\Amalya\Documents\server\build\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug -IC:\Users\Amalya\Documents\server -IC:\Users\Amalya\Documents\server\build\Desktop_Qt_6_9_1_MSVC2022_64bit-Debug\server_autogen\include -external:IC:\Qt\6.9.1\msvc2022_64\include\QtCore -external:IC:\Qt\6.9.1\msvc2022_64\include -external:IC:\Qt\6.9.1\msvc2022_64\mkspecs\win32-msvc -external:IC:\Qt\6.9.1\msvc2022_64\include\QtWidgets -external:IC:\Qt\6.9.1\msvc2022_64\include\QtGui -external:IC:\Qt\6.9.1\msvc2022_64\include\QtNetwork -external:W0
+  OBJECT_DIR = CMakeFiles\server.dir
+  OBJECT_FILE_DIR = CMakeFiles\server.dir
+  TARGET_COMPILE_PDB = CMakeFiles\server.dir\
+  TARGET_PDB = server.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target server
@@ -138,7 +147,7 @@ build CMakeFiles\server.dir\parsing.cpp.obj: CXX_COMPILER__server_unscanned_Debu
 #############################################
 # Link the executable server.exe
 
-build server.exe: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles\server.dir\server_autogen\mocs_compilation.cpp.obj CMakeFiles\server.dir\bad_login.cpp.obj CMakeFiles\server.dir\bad_password.cpp.obj CMakeFiles\server.dir\chat.cpp.obj CMakeFiles\server.dir\logger.cpp.obj CMakeFiles\server.dir\server.cpp.obj CMakeFiles\server.dir\users.cpp.obj CMakeFiles\server.dir\main.cpp.obj CMakeFiles\server.dir\parsing.cpp.obj | C$:\Qt\6.9.1\msvc2022_64\lib\Qt6Widgetsd.lib C$:\Qt\6.9.1\msvc2022_64\lib\Qt6Networkd.lib C$:\Qt\6.9.1\msvc2022_64\lib\Qt6Guid.lib C$:\Qt\6.9.1\msvc2022_64\lib\Qt6Cored.lib C$:\Qt\6.9.1\msvc2022_64\lib\Qt6EntryPointd.lib || server_autogen server_autogen_timestamp_deps
+build server.exe: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles\server.dir\server_autogen\mocs_compilation.cpp.obj CMakeFiles\server.dir\bad_login.cpp.obj CMakeFiles\server.dir\bad_password.cpp.obj CMakeFiles\server.dir\chat.cpp.obj CMakeFiles\server.dir\logger.cpp.obj CMakeFiles\server.dir\server.cpp.obj CMakeFiles\server.dir\users.cpp.obj CMakeFiles\server.dir\main.cpp.obj CMakeFiles\server.dir\parsing.cpp.obj CMakeFiles\server.dir\mainwindow.cpp.obj | C$:\Qt\6.9.1\msvc2022_64\lib\Qt6Widgetsd.lib C$:\Qt\6.9.1\msvc2022_64\lib\Qt6Networkd.lib C$:\Qt\6.9.1\msvc2022_64\lib\Qt6Guid.lib C$:\Qt\6.9.1\msvc2022_64\lib\Qt6Cored.lib C$:\Qt\6.9.1\msvc2022_64\lib\Qt6EntryPointd.lib || server_autogen server_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc /W4 /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
   LINK_LIBRARIES = C:\Qt\6.9.1\msvc2022_64\lib\Qt6Widgetsd.lib  C:\Qt\6.9.1\msvc2022_64\lib\Qt6Networkd.lib  C:\Qt\6.9.1\msvc2022_64\lib\Qt6Guid.lib  d3d11.lib  dxgi.lib  dxguid.lib  d3d12.lib  C:\Qt\6.9.1\msvc2022_64\lib\Qt6Cored.lib  mpr.lib  userenv.lib  C:\Qt\6.9.1\msvc2022_64\lib\Qt6EntryPointd.lib  shell32.lib  ws2_32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -214,7 +223,7 @@ build server_autogen_timestamp_deps: phony
 #############################################
 # Utility command for server_autogen
 
-build server_autogen: phony CMakeFiles\server_autogen server_autogen\timestamp server_autogen\mocs_compilation.cpp server_autogen_timestamp_deps
+build server_autogen: phony CMakeFiles\server_autogen server_autogen\include\ui_mainwindow.h server_autogen\timestamp server_autogen\mocs_compilation.cpp server_autogen_timestamp_deps
 
 
 #############################################
@@ -231,7 +240,7 @@ build server_autogen\timestamp server_autogen\mocs_compilation.cpp | ${cmake_nin
 #############################################
 # Phony custom command for CMakeFiles\server_autogen
 
-build CMakeFiles\server_autogen | ${cmake_ninja_workdir}CMakeFiles\server_autogen: phony server_autogen\timestamp || server_autogen_timestamp_deps
+build CMakeFiles\server_autogen server_autogen\include\ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles\server_autogen ${cmake_ninja_workdir}server_autogen\include\ui_mainwindow.h: phony server_autogen\timestamp || server_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

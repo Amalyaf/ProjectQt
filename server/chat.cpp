@@ -92,6 +92,52 @@ void Chat:: getChatMessages(std::string usLog)
     file.close();
 }
 
+std::vector<std::string> Chat::showPrvtMessages()
+{
+    // std::vector<std::string> strings;
+    // for (auto &m : allMessage)
+    // {
+    //     strings.push_back(m.getSender() + " send to " + m.getRecipient() + "message: " + m.getText());
+    // }
+    // return strings;
+
+    std::fstream file = std::fstream(private_message, std::ios::in);
+    std::vector<std::string> strings;
+
+    if (file.is_open()) {
+        std::string str;
+        while (std::getline(file, str)) { strings.push_back(str); }
+    }
+    file.close();
+    return strings;
+}
+
+std::vector<std::string> Chat::showChatMessages()
+{
+    std::fstream file = std::fstream(public_message_server, std::ios::in);
+    std::vector<std::string> strings;
+
+    if (file.is_open()) {
+        std::string str;
+        while (std::getline(file, str)) { strings.push_back(str); }
+    }
+    file.close();
+    return strings;
+}
+
+std::vector<std::string> Chat::showLogs()
+{
+    std::fstream file = std::fstream(logFile, std::ios::in);
+    std::vector<std::string> strings;
+
+    if (file.is_open()) {
+        std::string str;
+        while (std::getline(file, str)) { strings.push_back(str); }
+    }
+    file.close();
+    return strings;
+}
+
 void Chat::getUserList()
 {
     std::fstream file = std::fstream(UserList, std::ios::in | std::ios::out | std::ios::trunc);
@@ -260,6 +306,11 @@ void Chat::sendPublicMessage(std::string userLogin, std::string text)
     }
 
     viewedMessage.push_back(message);
+
+    std::fstream file = std::fstream(public_message_server, std::ios::in | std::ios::out | std::ios::app);
+    file << "Sender: " << message.getSender() << "\n";
+    file << "Message: " << message.getText() << "\n";
+    file.close();
     std::thread t1(&Logger::WriteLog, std::ref(log), "Пользователь " + userLogin + " успешно отправил групповое сообщение");
     t1.join();
 }
@@ -408,6 +459,19 @@ int Chat::getReadUsersStatus() {
         }
     }
     return 1;
+}
+
+std::vector<std::string> Chat::getChat()
+{
+    std::fstream file = std::fstream(userData, std::ios::in);
+    std::vector<std::string> strings;
+
+    if (file.is_open()) {
+        std::string str;
+        while (std::getline(file, str)) { strings.push_back(str); }
+    }
+    file.close();
+    return strings;
 }
 
 

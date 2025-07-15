@@ -8,6 +8,8 @@
 #include "logger.h"
 #include "parsing.h"
 
+constexpr auto public_message_server = "C:/Windows/Temp/Chat/public_message_server.txt";
+constexpr auto logFile = "C:/Windows/Temp/Chat/log.txt";
 constexpr auto getPrvtMsg = "C:/Windows/Temp/Chat/getPrvtMsg.txt";
 constexpr auto getChatMsg = "C:/Windows/Temp/Chat/getChatMsg.txt";
 constexpr auto UserList = "C:/Windows/Temp/Chat/UserList.txt";	// файл для хранения логинов пользователей
@@ -47,9 +49,12 @@ public:
     void readPrivateMessage(); // метод для чтения личных сообщений из файла
     void readPublicMessage(); // метод для чтения общих сообщений из файла
     int getReadUsersStatus(); // метод выводит 1, если есть файл userData, иначе -1
-    void getChat(); // метод выводит данные пользователя
+    std::vector<std::string> getChat(); // метод выводит данные пользователя
     void getUserList();
     void getChatMessages(std::string usLog);
+    std::vector<std::string> showPrvtMessages();
+    std::vector<std::string> showChatMessages();
+    std::vector<std::string> showLogs();
     void getPrivateMessage(std::string userName);//показать личные сообщения пользователю username
     int enter(std::string userLogin, std::string userPassword); // авторизация пользователя
     int checkUser(std::string userLogin, std::string userPassword); // прроверка корректности логина и пароля

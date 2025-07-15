@@ -2,10 +2,9 @@
 
 Users::Users()
 {
-    std::cout<<"Constructor Users\n";
-    // _login = "-";
-    // _password = "-";
-    // _name = "-";
+    _login = "-";
+    _password = "-";
+    _name = "-";
 }
 
 Users::Users(std::string login, std::string name, std::string password):
@@ -13,7 +12,7 @@ Users::Users(std::string login, std::string name, std::string password):
     _name(name),
     _password(password)
 {
-std::cout<<"Copy constructor Users\n";
+
 }
 
 void Users::setUser()
@@ -28,19 +27,16 @@ void Users::setUser()
 
 void Users::setLogin(std::string lgn)
 {
-    std::cout<<"SetLogin\n";
     _login = lgn;
 }
 
 void Users::setPassword(std::string pswd)
 {
-    std::cout<<"SetPassword\n";
     _password = pswd;
 }
 
 void Users::setName(std::string nm)
 {
-    std::cout<<"SetName\n";
     _name = nm;
 }
 

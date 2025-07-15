@@ -3,7 +3,7 @@
 
 Server::Server()
 {
-    init_socket();
+    std::cout<<"Constructor"<<std::endl;
 }
 
 Server::~Server()
@@ -14,6 +14,7 @@ Server::~Server()
 
 int Server::init_socket()
 {
+    std::cout<<"init_socket"<<std::endl;
     // Initialize Winsock
     iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
     if (iResult != 0) {
@@ -72,6 +73,7 @@ int Server::init_socket()
         WSACleanup();
         return 1;
     }
+    check = true;
     return 0;
 }
 
@@ -258,8 +260,28 @@ std::string Server::Read()
 
 void Server::exit()
 {
+    chat->~Chat();
     std::cout << "Exit" << std::endl;
     closesocket(ClientSocket);
+}
+
+void Server::start()
+{
+    std::string message;
+    message = Read();
+
+    while (message != "end") {
+        message = Read();
+    }
+    exit();
+}
+
+int Server::chek()
+{
+    std::cout<<"Check"<<std::endl;
+    if (check)
+        return 1;
+    return 0;
 }
 
 

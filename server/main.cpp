@@ -1,14 +1,18 @@
 #include "server.h"
+#include <iostream>
+#include <QApplication>
+#include <QTranslator>
+#include "mainwindow.h"
 
-int main()
+
+int main(int argc, char *argv[])
 {
-    std::unique_ptr<Server> server(new Server);
-    std::string message;
-    message = server->Read();
-
-    while (message != "end") {
-        message = server->Read();
+    QApplication a(argc, argv);
+    auto w = new MainWindow;
+    if(w){
+        w->show();
     }
-    server->exit();
-    return 0;
+    else
+        return 0;
+    return a.exec();
 }
